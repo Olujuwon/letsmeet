@@ -1,0 +1,13 @@
+h1{
+    color:white;
+    font-size: 2rem;
+}
+p{
+    color:white;
+    font-size: 1rem;
+}
+.head{
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+}

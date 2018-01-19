@@ -1,0 +1,148 @@
+.main{
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#fullname, #email, #reemail, #readdress [type="text"] {
+    width: 73%;
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+}
+#email, #reemail [type="text"] {
+    margin: 5px 0 5px 0;
+}
+#phone {
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+    width: 25%;
+    align-self: flex-end;
+    flex-shrink: 1
+}
+#city, #state, #country, #zip {
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+    width: 24%;
+    box-sizing: border-box;
+}
+#habu{
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#address,
+#readdress{
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+input[type=submit]{
+    width: 20%;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+p{
+    color: white;
+}
+hr{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.fone{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0 5px 0;
+}
+.small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
+input{
+    line-height: 35px;
+    color: white;
+}
+input::placeholder{
+    color: #ECF0F1;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    line-height: 35px;
+}
+/*Responsive design starts here with 5 breakpoints*/
+@media screen and (max-width:760px) {
+    #phone {
+        font-size: 1rem;
+        width: 100%;
+    }
+    #fullname, #email, #reemail, #readdress [type="text"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+    #city, #state, #country, #zip {
+        font-size: 1rem;
+        width: 49%;
+        margin: 0 1px 0 0;
+    }
+input[type=submit]{
+    width: 50%;
+    font-size: 1rem;
+}
+}
+@media screen and (max-width:414px) {
+    #phone {
+        font-size: 1rem;
+        width: 100%;
+    }
+    #fullname, #email, #reemail, #readdress [type="text"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+    #city, #state, #country, #zip {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0px;
+    }
+    #habu{
+        font-size: 1rem;
+        width: 100%;
+    }
+    #address,
+#readdress{
+    font-size: 1rem;
+    width: 100%;
+}
+input[type=submit]{
+    width: 50%;
+    font-size: 1rem;
+}
+}
+
+

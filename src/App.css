@@ -1,0 +1,12 @@
+
+.App {
+    font-family: roboto;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #6C7A89;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }

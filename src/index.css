@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: roboto ;
+  font-size: small;
+  box-sizing: border-box;
+}

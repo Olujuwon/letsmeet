@@ -1,0 +1,19 @@
+textarea{
+    border: 0px;
+    border: solid 1px;
+    border-color:white;
+    background-color: #6C7A89;
+    display: block;
+    font-size: 0.8rem;
+    width: 100%;
+    color:  white;
+}
+#txt{
+    margin-bottom: 20px;
+}
+#address{
+    margin-bottom: 20px;
+}
+textarea::-webkit-input-placeholder{
+    color: white; 
+}

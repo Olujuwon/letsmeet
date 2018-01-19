@@ -1,0 +1,10 @@
+[
+    {"location":"Austin, Texas", "checked":false, "name":"Austin"},
+    {"location":"New York, New York", "checked":false, "name":"Newyork"},
+    {"location":"Toronto, Canada", "checked":false, "name":"Toronto"},
+    {"location":"Shanghai, China" , "checked":false, "name":"China"},
+    {"location":"Dublin, Ireland" , "checked":false, "name":"Dublin"},
+    {"location":"Hursley, United Kingdom" ,"checked":false, "name":"Hursley"},
+    {"location":"Boeblingen, Germany", "checked":false, "name":"Boeblingen"},
+    {"location":"Somewhere Else" , "checked":false, "name":"others"}]
+    
