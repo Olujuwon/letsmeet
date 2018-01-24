@@ -173,6 +173,7 @@ input[type = "checkbox"]:checked + .ldisc
     display: inline-block;
     font-size: 1rem;
     cursor: pointer;
+    height: 40px;
 }
 input[type=submit]{
     width: 50%;

@@ -1,19 +1,42 @@
-textarea{
-    border: 0px;
-    border: solid 1px;
-    border-color:white;
+.txt{
     background-color: #6C7A89;
     display: block;
     font-size: 0.8rem;
     width: 100%;
     color:  white;
-}
-#txt{
     margin-bottom: 20px;
+    outline: none;
+    border: 1px solid white;
 }
-#address{
-    margin-bottom: 20px;
+.txt.invalid{
+    border-bottom-color:red;
+}
+.portfolio{
+    border: 0px;
+    border-bottom: solid 1px;
+    border-bottom-color:white;
+    background-color: #6C7A89;
+    font-size: medium;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    outline: none;
+    line-height: 30px;
+    color: white;
+}
+.portfolio.invalid{
+    border-bottom-color:red;
 }
 textarea::-webkit-input-placeholder{
     color: white; 
+}
+span{
+    color: white;
+    font-size: 1rem;
+}
+.portmessage{
+    color: rgba(66, 6, 6, 0.541);
+    font-size: 1rem;
+    position: relative;
+    top: -23px;
+    left: 0px;
 }

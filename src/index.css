@@ -1,6 +1,9 @@
 *{
   margin: 0;
 }
+html{
+  font-size: small;
+}
 
 body {
   margin: 0px;

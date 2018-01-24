@@ -9,14 +9,21 @@ import PropTypes from 'prop-types';
 import Portfolio from "./components/portfolio";
 
 
+
 class App extends Component {
   constructor(){
     super()
     this.state = {
         disc : discipline,
         loc: location,
-        disc2: []
+        disc2: [ ]
       }
+}
+
+//Handle Form 
+handleForm = (componentstate)=>{
+  
+  console.log('form handled', componentstate);
 }
 //Add new items to Discipline array
 addNewDisc = (e, input,checked)=>{
@@ -70,7 +77,7 @@ portfolioHandle = (e, a, b)=>{
     return (
       <div className="App">
       <Header />
-      <FormComp />
+      <FormComp submitform={this.handleForm}/>
       <SkillComp data={this.state.disc} 
       xchange={this.handleChange} 
       data2={this.state.disc2} 

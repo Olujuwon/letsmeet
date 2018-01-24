@@ -6,19 +6,24 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
-
-#fullname, #email, #reemail, #readdress [type="text"] {
+.fieldtwo{
     width: 73%;
+    line-height: 30px;
     border: 0px;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px; 
     border-bottom-color:white;
     background-color: #6C7A89;
     font-size: medium;
+    outline: none;
+    color: white
 }
-#email, #reemail [type="text"] {
+.fieldtwo.invalid{
+    border-bottom-color:red;
+}
+.fieldtwo [type="text"] {
     margin: 5px 0 5px 0;
 }
-#phone {
+.phone {
     border: 0px;
     border-bottom: solid 1px;
     border-bottom-color:white;
@@ -26,9 +31,16 @@
     font-size: medium;
     width: 25%;
     align-self: flex-end;
-    flex-shrink: 1
+    flex-shrink: 1;
+    outline: none;
+    line-height: 30px;
+    color: white;
 }
-#city, #state, #country, #zip {
+.phone.invalid{
+    border-bottom-color:red;
+}
+
+.fieldone {
     border: 0px;
     border-bottom: solid 1px;
     border-bottom-color:white;
@@ -36,28 +48,31 @@
     font-size: medium;
     width: 24%;
     box-sizing: border-box;
+    outline: none;
+    line-height: 30px;
+    color: white;
 }
-#habu{
+.fieldone.invalid{
+    border-bottom-color:red;
+}
+.fieldthree{
     border: 0px;
     border-bottom: solid 1px;
     border-bottom-color:white;
     background-color: #6C7A89;
     font-size: medium;
     width: 100%;
-    margin-bottom: 30px;
+    margin: 5px 0 10px 0;
+    outline: none;
+    line-height: 30px;
+    color: white;
 }
-#address,
-#readdress{
-    border: 0px;
-    border-bottom: solid 1px;
-    border-bottom-color:white;
-    background-color: #6C7A89;
-    font-size: medium;
-    width: 100%;
-    margin: 5px 0 5px 0;
+.fieldthree.invalid{
+    border-bottom-color:red;
 }
 input[type=submit]{
     width: 20%;
+    height: 45px;
     background-color:transparent;
     border: 1px solid white;
     border-radius: 5px;
@@ -86,27 +101,24 @@ hr{
     justify-content: space-between;
     margin: 5px 0 5px 0;
 }
-input{
-    line-height: 35px;
-    color: white;
-}
 input::placeholder{
     color: #ECF0F1;
     font-size: 0.8rem;
     font-weight: lighter;
     line-height: 35px;
 }
+
 /*Responsive design starts here with 5 breakpoints*/
 @media screen and (max-width:760px) {
-    #phone {
+    .phone {
         font-size: 1rem;
         width: 100%;
     }
-    #fullname, #email, #reemail, #readdress [type="text"] {
+    .fullname, .email, .reemail, .readdress [type="text"] {
         width: 100%;
         font-size: 1rem;
     }
-    #city, #state, #country, #zip {
+    .city, .state, .country, .zip {
         font-size: 1rem;
         width: 49%;
         margin: 0 1px 0 0;
@@ -117,25 +129,25 @@ input[type=submit]{
 }
 }
 @media screen and (max-width:414px) {
-    #phone {
+    .phone {
         font-size: 1rem;
         width: 100%;
     }
-    #fullname, #email, #reemail, #readdress [type="text"] {
+    .fullname, .email, .reemail, .readdress [type="text"] {
         width: 100%;
         font-size: 1rem;
     }
-    #city, #state, #country, #zip {
+    .city, .state, .country, .zip {
         font-size: 1rem;
         width: 100%;
         margin: 0px;
     }
-    #habu{
+    .habu{
         font-size: 1rem;
         width: 100%;
     }
-    #address,
-#readdress{
+    .address,
+.readdress{
     font-size: 1rem;
     width: 100%;
 }
