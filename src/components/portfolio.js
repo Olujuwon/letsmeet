@@ -6,7 +6,7 @@ import isURL from 'validator/lib/isURL';
 const validate = (obj)=>{
     return {
         portfolio: isURL(obj.portfolio)? '': "There seem to be an error!",
-        txt: !isAlphanumeric(obj.txt.replace(' ', '')) || obj.txt.length >= 251
+        txt: isAlphanumeric(obj.txt.replace(/\s/g)) || obj.txt.length >= 251
     }
 }
 
@@ -15,8 +15,17 @@ class Portfolio extends Component {
         super(props)
         this.state = {
             portfolio:'', 
-            txt: ''
+            txt: '',
+            focused: {
+                portfolio:false, 
+            txt: false
+            }
         }
+    }
+    handleBlur =(e)=>{
+        this.setState({focused: {...this.state.focused,
+        [e.target.name]:true}})
+        console.log(e.target.name, this.state.focused);    
     }
   render() {
       const errors = validate(this.state)
@@ -31,12 +40,13 @@ class Portfolio extends Component {
             className={(errors.portfolio)? 'portfolio invalid':'portfolio'}
             onChange={e=>this.setState({portfolio:e.target.value})} 
             value={this.state.portfolio}
+            onBlur = {this.handleBlur}
             placeholder="Portfolio link*"/>
             <span className="portmessage">{errors.portfolio}</span>
           
           <span>{this.state.txt.length}/250</span>
             <textarea name="" 
-            className={(errors.txt)? 'txt invalid':'txt'}
+            className={(errors.txt)? 'txt':'txt invalid'}
             cols="30" 
             rows="5"
             onChange={e=>this.setState({txt:e.target.value})} 

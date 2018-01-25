@@ -7,6 +7,7 @@ import discipline from "./data/discipline";
 import location from "./data/location";
 import PropTypes from 'prop-types';
 import Portfolio from "./components/portfolio";
+import { BrowserRouter, Route } from 'react-router-dom'
 
 
 
@@ -76,16 +77,20 @@ portfolioHandle = (e, a, b)=>{
   render() {
     return (
       <div className="App">
-      <Header />
-      <FormComp submitform={this.handleForm}/>
-      <SkillComp data={this.state.disc} 
-      xchange={this.handleChange} 
-      data2={this.state.disc2} 
-      checkbox={this.handleCheckbox} 
-      checkboxL={this.handleCheckboxL}
-      data3={this.state.loc} 
-      addnew={this.addNewDisc}/>
-      <Portfolio portfolio={this.portfolioHandle} />
+      <BrowserRouter>
+      <div>
+        <Route path="/" component={Header }  />
+        <Route path="/personal" component={FormComp } exact/>
+        <Route path="/skills" render={() => <SkillComp  data={this.state.disc} 
+                              xchange={this.handleChange} 
+                              data2={this.state.disc2} 
+                              checkbox={this.handleCheckbox} 
+                              checkboxL={this.handleCheckboxL}
+                              data3={this.state.loc} 
+                              addnew={this.addNewDisc}/>} exact/>
+        <Route path="/portfolio" component={Portfolio } exact/>
+      </div>  
+      </BrowserRouter>
       </div>
     );
   }

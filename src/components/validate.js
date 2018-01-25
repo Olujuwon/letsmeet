@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 function validate(obj){
         const fullnameReg = /^([a-zA-Z]{2,}\s[a-zA-Z]{2,})$/g;
         const phoneReg = /^((\+?|00)\d{1,3}|0?)-?\d{3}-?\d{3}-?\d{3}| {4}$/;
@@ -17,7 +14,7 @@ function validate(obj){
             fullname:!fullnameReg.test(obj.fullname), 
             phone:!phoneReg.test(obj.phone),
             email:!emailReg.test(obj.email),
-            cemail:!cemailReg.test(obj.cemail),
+            cemail:!(cemailReg.test(obj.cemail) && obj.cemail===obj.email),
             address:!addressReg.test(obj.address),
             address2:!address2Reg.test(obj.address2),
             city:!cityReg.test(obj.city),

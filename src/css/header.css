@@ -5,9 +5,21 @@ h1{
 p{
     color:white;
     font-size: 1rem;
+    margin-bottom: 40px;
 }
 .head{
     text-align: center;
     align-self: center;
     margin-bottom: 20px;
+}
+.link{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    width:100px;
+    border-radius: 5px;
+    padding: 5px;
 }

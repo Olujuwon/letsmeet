@@ -160,10 +160,15 @@ input[type = "checkbox"]:checked + .ldisc
     font-size: 1rem;
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
     width: 21%;
+    height: 40px;
+    outline: none;
+    color: white;
 }
 #addbutt{
     width: 20%;
+    margin-top: 10px;
     background-color: #454E57;
     border: none;
     border-radius: 5px;

@@ -25,7 +25,7 @@ class FormComp extends Component {
   render() {
     //const {fullname,phone,email,cemail,address,address2,city,state,country,zip,habu } = this.state;
     const errors = validate(this.state);
-    console.log("errors", errors.fullname);
+    //console.log("errors", errors.fullname);
     
     return (
       <form className="main" onSubmit = {()=>{this.props.submitform(this.state) }}>
